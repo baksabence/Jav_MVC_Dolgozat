@@ -13,7 +13,7 @@ export default class Auto {
     megjelenit() {
         let txt = `
         <div class="col-lg-4 col-md-6">
-            <div class="card mb-3 autoElem">
+            <div class="autoElem card mb-3">
                 <img src="${this.#kepAdat.kep}" class="card-img-top" alt="${this.#kepAdat.fajta}">
                 <div class="card-body">
                     <button class="btn delete-btn" data-id="${this.#id}">Törlés</button>
