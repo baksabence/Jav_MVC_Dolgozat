@@ -1,23 +1,17 @@
 
-export default class AutoModell{
-    #LISTA = []
-    #aktElem
+export default class AutoModell {
+    #lista = []
 
-    constructor(){
-        this.torolAktElem()
+    constructor(lista) {
+        this.#lista = lista
     }
 
-    getList(){
-        return this.#LISTA
+    torol(index) {
+        this.#lista.splice(index, 1);
+
     }
 
-
-    getAktElem(){
-        return this.#aktElem
+    getLista() {
+        return this.#lista;
     }
-
-    torolAktElem(index){
-       // this.#LISTA[index].splice();
-    }
-
 }
